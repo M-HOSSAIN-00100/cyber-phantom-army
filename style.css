@@ -1,0 +1,30 @@
+body {
+  background-color: #0d0d0d;
+  color: #00ffff;
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input, button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #1f1f1f;
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  border-radius: 5px;
+}
+
+#chatLog {
+  margin-top: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  background: #111;
+  padding: 10px;
+  border: 1px solid #00ffff;
+  text-align: left;
+}
