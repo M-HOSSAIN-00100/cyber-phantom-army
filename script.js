@@ -5,12 +5,12 @@ async function sendMessage() {
   log.innerHTML += `<p>👤 You: ${input}</p>`;
   document.getElementById('userInput').value = '';
 
-  const response = await fetch("https://cyber-phantom-backend.onrender.com/api", {
+  const response = await fetch("https://chatbot-backend-1-5h3w.onrender.com/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message: input })
+    body: JSON.stringify({ prompt: input })
   });
 
   const data = await response.json();
-  log.innerHTML += `<p>🤖 CYBER BOT: ${data.reply}</p>`;
+  log.innerHTML += `<p>🤖 CYBER BOT: ${data.response}</p>`;
 }
