@@ -1,30 +1,68 @@
 body {
-  background-color: #0d0d0d;
-  color: #00ffff;
+  background-color: #0f0f0f;
+  color: #00ffcc;
   font-family: 'Courier New', monospace;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 20px #00ffcc88;
+}
+
+h1 {
   text-align: center;
-  margin-top: 50px;
+  color: #00ffe1;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #00ffe1;
 }
 
-input, button {
-  padding: 10px;
-  margin-top: 10px;
-  background-color: #1f1f1f;
-  color: #00ffff;
-  border: 1px solid #00ffff;
-  border-radius: 5px;
-}
-
-#chatLog {
-  margin-top: 20px;
-  max-height: 300px;
+.chat-log {
+  height: 400px;
   overflow-y: auto;
-  background: #111;
+  background-color: #121212;
   padding: 10px;
-  border: 1px solid #00ffff;
-  text-align: left;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #00ffcc44;
+}
+
+.chat-log p {
+  margin: 5px 0;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: #222;
+  color: #00ffcc;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00e6b8;
 }
