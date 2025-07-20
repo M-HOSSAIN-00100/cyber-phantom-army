@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>𒆜 CYBER PHANTOM ARMY 𒆜</title>
+  <title>𒆜 CYBER PHANTOM ARMY BOT 𒆜</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>𒆜 CYBER PHANTOM ARMY BOT 𒆜</h1>
-    <input type="text" id="userInput" placeholder="Type your message...">
-    <button onclick="sendMessage()">Send</button>
-    <div id="chatLog"></div>
+    <div id="chatLog" class="chat-log"></div>
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off">
+      <button onclick="sendMessage()">Send</button>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
